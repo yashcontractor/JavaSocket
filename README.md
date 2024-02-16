@@ -1,2 +1,5 @@
 # Java Socket Programming
-Developed the multicast-client side of the framework 'MulticastStocksClient.java'
+
+Developed a Java socket application demonstrating advanced socket programming and multicast communication techniques. The server component dynamically generates and broadcasts real-time stock values for four fictional companies (Applet, Googlet, Teslat, Metat) over a specified multicast channel. Utilizing Java's MulticastSocket and DatagramPacket classes, the server simulates fluctuating stock prices by applying random variations to the base values of each stock. This multicast approach allows the server to efficiently distribute stock updates to multiple clients simultaneously without the need for individual connections.
+
+On the client side, users can choose to monitor stock values for a specific company or all companies. The client application, upon receiving stock updates, filters the data based on the user's selection and displays the latest stock values in real-time. This is achieved through parsing the multicast messages, extracting the relevant stock information, and updating the user interface accordingly. The client also handles user authentication through a login mechanism, ensuring secure access to the stock data.
